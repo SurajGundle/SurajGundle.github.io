@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Suraj Gundle Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="./photo-1493946947703-a0e68b050bee.avif">
     <style>
@@ -15,14 +15,15 @@
             text-decoration: none;
         }
         #container{
-            border: 1px solid gray;
-            height: 1000px;
+            /* border: 1px solid gray;
+            height: 1000px; */
             
         }
         
         .navbar{
             border: 1px solid teal;
             position: fixed;
+            top: 0px;
             width: 100%;
             z-index: 999;
             padding: 30px 0;
@@ -38,34 +39,33 @@
         .navbar .logo a{
             border: 1px solid gray;
             border-radius: 10px;
-            color: teal;
+            color: wheat;
             font-size: 35px;
             font-weight: 600;
             margin: 0px 20px;
             padding: 5px;
         }
         .navbar .logo a:hover{
-            color: black;
+            color: white;
         }
 
         #bgImg{
-            display: flex;
-            background-image: url(./photo-1493946947703-a0e68b050bee.avif);
+            display: block;
+            /* top: 100px; */
+            background-image: url(./kelly-sikkema-tk9RQCq5eQo-unsplash.jpg);
             background-repeat: no-repeat;
             /* background-size:20vh; */
-            position: relative;
+            /* position: relative; */
             background-color: #111;
-            height: 100vh;
-            /* color: #fff; */
-            min-height: 500px;
-            background-size: cover;
+            height: 60%;
+            background-size: 100%;
             background-attachment: fixed;
             font-family: "Ubuntu", sans-serif;
         }
 
         .menu{
             border: 1px solid teal;
-            width: 50%;
+            width: 45%;
             display: flex;
             justify-content: space-around;
         }
@@ -91,10 +91,161 @@
             border: 1px solid green;
             height: 200px;
         }
+
+        #onDiv{
+            display: block;
+            border: 1px solid wheat;
+            width: fit-content;
+            position: relative;
+            top: 200px;
+            left: 280px;
+            color: wheat;
+        }
+        #onDiv>span{
+            font-size: 50px;
+            font-weight: bold;
+        }
+        #onDiv2{
+            border: 1px solid teal;
+            /* width: fit-content; */
+            display: flex;
+            height: 30rem;
+            justify-content:end;
+           
+        }
+        #onDiv2>img{
+            border-radius: 200px 0px 0px 200px;
+        }
+
+        #onDiv3>a{
+
+            display: block;
+            border: 1px solid wheat;
+            width: fit-content;
+            position: relative;
+            top: -250px;
+            left: 370px;
+            font-size: 40px;
+            color: wheat;
+            background-color: #111;
+            border-radius: 10px;
+        }
+        #onDiv3>a:hover{
+            color: white;
+        }
+
+        /* ///////////////////////ABOUT ME //////////////////////// */
+
+        .menuDetails{
+            border: 2px solid darkblue;
+            /* height: 520px; */
+            margin-top: 5px;
+            margin-bottom: 5px;
+           
+        }
+        .menuTitle{
+            border: 1px solid teal;
+            text-align: center;
+           font-size: 25px;
+           margin-top: 30px;
+        }
+        #imgAndOverview{
+           display: flex;
+            margin-top: 20px;
+            justify-content: center;
+            align-items: center;
+         
+            
+           
+        }
+        #profilePic{
+            border: 1px solid red;
+           display: flex;
+           width: fit-content;
+           justify-content: center;
+           align-items: center;
+           margin-left: 20px;
+           
+           
+           
+        }
+        #profilePic>img{
+            width: 430px;
+            height: 450px;
+            border-radius: 50%;
+            margin: 20px;
+            
+           
+
+        }
+        #description{
+            border: 2px solid skyblue;
+            width: 54%;
+            margin: auto;
+            
+           
+       
+        }
+       #description>span{
+         font-size: 30px;
+         
+       }
+       #description>p{
+           margin-top: 10px;
+        line-height: 22px;
+        font-size: larger;
+       }
+       #showProjects{
+           border: 1px solid teal;
+           display: grid;
+           grid-template-columns: repeat(3,1fr);
+           grid-template-rows: auto;
+           
+       }
+       .myProject{
+           border: 1px solid green;
+           height: 400px;
+           margin: 30px;
+           text-align: center;
+       }
+       .myProject>p{
+           border: 1px solid teal;
+           width: 81%;
+           margin: auto;
+       }
+       .projectSnapShot{
+           border: 1px solid red;
+           width: 80%;
+           margin: auto;
+       }
+       .projectSnapShot>img{
+           width: 100%;
+           height: 230px;
+           border-radius: 20px;
+       }
+
+       .linkButtons{
+           border: 1px solid teal;
+           display: flex;
+           justify-content: space-evenly;
+           margin-top: 5px;
+           font-size: larger;
+
+       }
+       .linkButtons>a{
+           border: 1px solid teal;
+           margin: 10px;
+           padding: 10px 15px;
+           background-color: wheat;
+           text-decoration: none;
+       }
+
      
     </style>
 </head>
 <body>
+
+    
     <div id="container">
         
         <nav class="navbar" id="changeColor">
@@ -110,17 +261,129 @@
                     <a href=""><li>Skills</li></a>
                     <a href=""><li>Projects</li></a>
                     <a href=""><li>Contact</li></a>
-                   
                 </ul>
             </div>
         </nav>
         <div id="bgImg">
 
+            <div id="onDiv">
+                <h1>Hello, I'm a</h1>
+                <br>
+                <span>Java Developer</span>
+            </div>
+            <div id="onDiv2">
+                <img src="./giphy.gif" alt="gif">
+            </div>
+            <div id="onDiv3">
+               
+                <a href="./resume/Suraj Gundle Resume.pdf" download="Suraj Gundle Resume"><span>Resume</span></a>
+            </div>
+
         </div>
 
-        <div class="temp"></div>
-        <div class="temp"></div>
-        <div class="temp"></div>
+        <div class="menuDetails">
+            <div class="menuTitle">
+                <h1> About me</h1>
+            </div>
+            <div id="imgAndOverview">
+
+                <div id="profilePic">
+                    <img src="./profPic.jpg" alt="profPic">
+                   
+
+                </div>
+                <div id="description">
+                    <span>I'm Suraj Madhav Gundle and I'm Java Developer</span>
+                    <p>A passionate JAVA Back-End Developer, Dedicated to developing robust applications that interact 
+                        with the Backend part of web applications. Extensive expertise in website architecture, design, and web
+                         design, and web API designs. Problem-solving mindset with a goal to optimize my application for better
+                          stability and speed. Love to work in a team.</p>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="menuDetails">
+            <div class="menuTitle">
+                <h1>Skills</h1>
+                
+            </div>
+            
+
+        </div>
+        <div class="menuDetails">
+            <div class="menuTitle">
+                <h1>Projects</h1>
+            </div>
+
+            <div id="showProjects">
+
+                <div class="myProject">
+                    <div class="projectSnapShot">
+                        <img src="./licious.png" alt="licious">
+                    </div>
+                    <h3>Licious</h3>
+                    <p>Cloned 
+                        Licious which is the first fresh meat brand 
+                        in India. Specially for chicken food.
+                    </p>
+                    <br>
+                    <p>Tech Used : HTML, CSS, JavaScript</p>
+
+                    <div class="linkButtons">
+                          <a href="">Git Repo</a>
+                          <a href="">Live Site</a>
+                    </div>
+
+                </div>
+                <div class="myProject">
+                    <div class="projectSnapShot">
+                        <img src="./licious.png" alt="licious">
+                    </div>
+                    <h3>Licious</h3>
+                    <p>Cloned 
+                        Licious which is the first fresh meat brand 
+                        in India. Specially for chicken food.
+                    </p>
+                    <br>
+                    <p>Tech Used : HTML, CSS, JavaScript</p>
+
+                    <div class="linkButtons">
+                          <a href="">Git Repo</a>
+                          <a href="">Live Site</a>
+                    </div>
+
+                </div>
+                <div class="myProject">
+                    <div class="projectSnapShot">
+                        <img src="./licious.png" alt="licious">
+                    </div>
+                    <h3>Licious</h3>
+                    <p>Cloned 
+                        Licious which is the first fresh meat brand 
+                        in India. Specially for chicken food.
+                    </p>
+                    <br>
+                    <p>Tech Used : HTML, CSS, JavaScript</p>
+
+                    <div class="linkButtons">
+                          <a href="">Git Repo</a>
+                          <a href="">Live Site</a>
+                    </div>
+
+                </div>
+
+            </div>
+            
+
+        </div>
+        <div class="menuDetails">
+            <div class="menuTitle">
+                <h1>Contact</h1>
+            </div>
+            
+            
+        </div>
 
     </div>
    
@@ -131,7 +394,7 @@
 window.onscroll = () => {
     if(this.scrollY>50){
         document.getElementById("changeColor").style.backgroundColor = "#92bcb5 ";
-        document.getElementById("colorChangeName").style.backgroundColor = "yellow";
+        document.getElementById("colorChangeName").style.backgroundColor = "#92bcb5";
     }else{
         document.getElementById("changeColor").style.backgroundColor="";
         document.getElementById("colorChangeName").style.backgroundColor = "";
