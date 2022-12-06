@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suraj Gundle Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
     <link rel="stylesheet" href="./photo-1493946947703-a0e68b050bee.avif">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    
     <style>
         *{
             margin: 0;
@@ -204,9 +207,14 @@
        }
        .myProject{
            border: 1px solid green;
-           height: 400px;
+           /* height: 400px; */
            margin: 30px;
            text-align: center;
+           /* border-radius: 10% */
+       }
+       .myProject:hover{
+           background-color: wheat;
+         
        }
        .myProject>p{
            border: 1px solid teal;
@@ -222,6 +230,19 @@
            width: 100%;
            height: 230px;
            border-radius: 20px;
+      
+ 
+       }
+       .projectSnapShot>img::after{
+        content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #e5e5e5;
+    opacity: 0;
+    
        }
 
        .linkButtons{
@@ -239,6 +260,66 @@
            background-color: wheat;
            text-decoration: none;
        }
+       #skillSet{
+           border: 1px solid teal;
+           
+           width: 90%;
+           margin: auto;
+           display: grid;
+           grid-template-columns: repeat(4,1fr);
+           grid-template-rows: auto;
+       }
+       #skillSet>div{
+           border: 1px solid gray;
+           margin-top: 20px;
+           height: 150px;
+           
+       }
+       .lang>img{
+           width: 150px;
+           height: 150px;
+           border-radius: 20%;
+          
+       }
+       .lang>img:hover{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        background-color: wheat;
+       }
+
+       #contactDiv{
+           border: 1px solid gray;
+           display: flex;
+           gap: 20px;
+           width: 90%;
+           margin: auto;
+           justify-content: space-evenly;
+       }
+       #contactDiv>.sections{
+           border: 1px solid red;
+           /* height: 300px; */
+           width: 50%;
+
+       }
+       .contactDetails{
+           border: 1px solid gray;
+           width: 90%;
+           height: 70px;
+           display: flex;
+           text-align: center;
+           align-items: center;
+           
+       }
+       .contactDetails>i{
+          margin: 5px 50px 5px 30px;
+
+          font-size: 30px;
+       }
+       .contactDetails>a{
+           font-size: larger;
+           text-decoration: none;
+           color: black;
+       }
+       
 
      
     </style>
@@ -305,7 +386,30 @@
         </div>
         <div class="menuDetails">
             <div class="menuTitle">
-                <h1>Skills</h1>
+                <h1>My Skills</h1>
+
+                <div id="skillSet">
+                    <div class="lang">
+                        <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" alt="">
+                    </div>
+                    <div class="lang">
+                        <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-ar21.svg" alt="">
+                    </div>
+                    <div class="lang">
+                        <img src="https://gauravportfolio0083.netlify.app/images/mysql.svg" alt="">
+                    </div>
+                    <div class="lang">
+                        <img src="https://i0.wp.com/theicom.org/wp-content/uploads/2016/03/js-logo.png?fit=500%2C500&ssl=1&w=640" alt="">
+                    </div>
+                    <div class="lang">
+                        <img src="https://gauravportfolio0083.netlify.app/images/java.svg" alt="">
+                    </div>
+                    <div class="lang">
+                        <img src="https://gauravportfolio0083.netlify.app/images/spring.svg" alt="">
+                    </div>
+                </div>
+
+
                 
             </div>
             
@@ -325,7 +429,7 @@
                     <h3>Licious</h3>
                     <p>Cloned 
                         Licious which is the first fresh meat brand 
-                        in India. Specially for chicken food.
+                        in India. Specially for chicken food.User can order food online.
                     </p>
                     <br>
                     <p>Tech Used : HTML, CSS, JavaScript</p>
@@ -338,40 +442,40 @@
                 </div>
                 <div class="myProject">
                     <div class="projectSnapShot">
-                        <img src="./licious.png" alt="licious">
+                        <img src="./getHarvest.png" alt="getHarvest">
                     </div>
-                    <h3>Licious</h3>
-                    <p>Cloned 
-                        Licious which is the first fresh meat brand 
-                        in India. Specially for chicken food.
+                    <h3>Get Harvest</h3>
+                    <p>Clone of Get Harvest helps you track your hours and projects, as well as
+                         invoice clients efficiently with time tracking.
                     </p>
                     <br>
-                    <p>Tech Used : HTML, CSS, JavaScript</p>
+                    <p>Tech Used : HTML, CSS,API,JavaScript</p>
 
                     <div class="linkButtons">
-                          <a href="">Git Repo</a>
-                          <a href="">Live Site</a>
+                          <a href="https://github.com/Shivam-Moudgil/get-harvest-clone">Git Repo</a>
+                          <a href=" https://get-harvest.netlify.app/">Live Site</a>
                     </div>
 
                 </div>
                 <div class="myProject">
                     <div class="projectSnapShot">
-                        <img src="./licious.png" alt="licious">
+                        <img src="./cricInfo.png" alt="licious">
                     </div>
-                    <h3>Licious</h3>
-                    <p>Cloned 
-                        Licious which  is the first fresh meat brand 
-                        in India. Specially for chicken food.
+                    <h3>CricInfo</h3>
+                    <p>Clone of CricInfo that helps you to
+                        find Live Cricket Scores, Match updates, Results,
+                         News, Articles at ESPNcricinfo
                     </p>
                     <br>
                     <p>Tech Used : HTML, CSS, JavaScript</p>
 
                     <div class="linkButtons">
-                          <a href="">Git Repo</a>
-                          <a href="">Live Site</a>
+                          <a href="https://github.com/sukhendu32/ragged-stranger-4285">Git Repo</a>
+                          <a href="https://curious-wisp-5abbfd.netlify.app/">Live Site</a>
                     </div>
 
                 </div>
+                
 
             </div>
             
@@ -379,7 +483,34 @@
         </div>
         <div class="menuDetails">
             <div class="menuTitle">
-                <h1>Contact</h1>
+                <h1>Contact me</h1>
+            </div>
+
+            <div id="contactDiv">
+
+                <div class="sections">
+                    <div><h2>Get in Touch with</h2></div>
+
+                    <div class="contactDetails">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="shubhamgundle35@gmail.com">shubhamgundle35@gmail.com</a>
+                    </div>
+                    <div class="contactDetails">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <a href="">Linkedin</a>
+                    </div>
+                    <div class="contactDetails">
+                        <i class="fa-brands fa-github"></i>
+                        <a href="">GitHub</a>
+                    </div>
+                    <div class="contactDetails">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="">+91 9552982183</a>
+                    </div>
+
+                </div>
+                <div class="sections"></div>
+
             </div>
             
             
