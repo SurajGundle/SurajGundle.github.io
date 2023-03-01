@@ -1,1020 +1,556 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suraj Gundle Portfolio</title>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
-    <link rel="stylesheet" href="./photo-1493946947703-a0e68b050bee.avif">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-
-    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
-    </script>
-
-    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            text-decoration: none;
-        }
-
-        #container {
-            /* border: 1px solid gray;
-            height: 1000px; */
-            width: 100%;
-
-        }
-
-        .navbar {
-            /* border: 1px solid teal; */
-            position: fixed;
-            top: 0px;
-            width: 100%;
-            z-index: 999;
-            padding: 30px 0;
-            font-family: "Ubuntu", sans-serif;
-            transition: all 0.3s ease;
-            /* background-color: gray; */
-        }
-
-        .navbar .max-width {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .navbar .logo a {
-            /* border: 1px solid gray; */
-            border-radius: 10px;
-            color: white;
-            font-size: 35px;
-            font-weight: 600;
-            margin: 0px 20px;
-            padding: 5px;
-        }
-
-        .navbar .logo a:hover {
-            color: wheat;
-        }
-
-        #bgImg {
-            display: block;
-            /* top: 100px; */
-            background-image: url(./kelly-sikkema-tk9RQCq5eQo-unsplash.jpg);
-            background-repeat: no-repeat;
-            /* background-size:20vh; */
-            /* position: relative; */
-            background-color: #111;
-            height: 60%;
-            background-size: 100%;
-            background-attachment: fixed;
-            font-family: "Ubuntu", sans-serif;
-        }
-
-        .menu {
-            /* border: 1px solid teal; */
-            width: 45%;
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .menu>a>li {
-            text-decoration: none;
-            list-style-type: none;
-            font-size: 25px;
-            font-weight: bold;
-            color: white;
-            display: inline-block;
-
-        }
-
-        .menu>a>li:hover {
-            color: wheat;
-            cursor: pointer;
-        }
-
-        nav.scroll {
-            background-color: #A1572F;
-            color: #eef;
-        }
-
-        .temp {
-            /* border: 1px solid green; */
-            height: 200px;
-        }
-
-        #onDiv {
-            display: block;
-            /* border: 1px solid wheat; */
-            width: fit-content;
-            position: relative;
-            top: 200px;
-            left: 300px;
-            color: wheat;
-        }
-
-        #onDiv>span {
-            font-size: 50px;
-            font-weight: bold;
-        }
-
-        #onDiv2 {
-            /* border: 1px solid teal; */
-            /* width: fit-content; */
-            display: flex;
-            height: 30rem;
-            justify-content: end;
-
-        }
-
-        #onDiv2>img {
-            border-radius: 200px 0px 0px 200px;
-        }
-
-        #onDiv3>a {
-
-            display: block;
-            border: 1px solid wheat;
-            width: fit-content;
-            position: relative;
-            top: -250px;
-            left: 370px;
-            font-size: 40px;
-            color: wheat;
-            background-color: #111;
-            border-radius: 10px;
-        }
-
-        #onDiv3>a:hover {
-            color: white;
-        }
-
-        /* ///////////////////////ABOUT ME //////////////////////// */
-
-        .menuDetails {
-            /* border: 2px solid darkblue; */
-            /* height: 520px; */
-            margin-top: 5px;
-            margin-bottom: 5px;
-
-        }
-
-        .menuTitle {
-            /* border: 1px solid teal; */
-            text-align: center;
-            font-size: 25px;
-            margin: 50px;
-        }
-
-        #imgAndOverview {
-            display: flex;
-            margin-top: 20px;
-            justify-content: center;
-            align-items: center;
-
-
-
-        }
-
-        #profilePic {
-            /* border: 1px solid red; */
-            display: flex;
-            width: fit-content;
-            justify-content: center;
-            align-items: center;
-            margin-left: 20px;
-
-
-
-        }
-
-        #profilePic>img {
-            width: 430px;
-            height: 450px;
-            border-radius: 50%;
-            margin: 20px;
-
-
-
-        }
-
-        #description {
-            /* border: 2px solid skyblue; */
-            width: 54%;
-            margin: auto;
-
-
-
-        }
-
-        #description>span {
-            font-size: 30px;
-
-        }
-
-        #description>p {
-            margin-top: 10px;
-            line-height: 22px;
-            font-size: larger;
-        }
-
-        #showProjects {
-            /* border: 1px solid teal; */
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: auto;
-
-        }
-
-        .myProject {
-            /* border: 1px solid green; */
-            /* height: 400px; */
-            margin: 30px;
-            text-align: center;
-            border-radius: 10px;
-            /* border-radius: 10% */
-        }
-
-        .myProject:hover {
-            background-color: wheat;
-
-        }
-
-        .myProject>p {
-            /* border: 1px solid teal; */
-            width: 81%;
-            margin: auto;
-        }
-
-        .projectSnapShot {
-            /* border: 1px solid red; */
-            width: 80%;
-            margin: auto;
-        }
-
-        .projectSnapShot>img {
-            width: 100%;
-            height: 230px;
-            border-radius: 20px;
-
-
-        }
-
-        .projectSnapShot>img::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background: #e5e5e5;
-            opacity: 0;
-
-        }
-
-        .linkButtons {
-            /* border: 1px solid teal; */
-            display: flex;
-            justify-content: space-evenly;
-            margin-top: 5px;
-            font-size: larger;
-           
-
-        }
-
-        .linkButtons>a {
-            /* border: 1px solid teal; */
-            margin: 10px;
-            padding: 10px 15px;
-            background-color: #92bcb5;
-            border-radius: 10px;
-            text-decoration: none;
-        }
-
-        #skillSet {
-            /* border: 1px solid teal; */
-
-            width: 90%;
-            margin: auto;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: auto;
-        }
-
-        #skillSet>div {
-            /* border: 1px solid gray; */
-            margin-top: 20px;
-            height: 150px;
-
-        }
-
-        .lang>img {
-            width: 150px;
-            height: 150px;
-            border-radius: 20%;
-
-        }
-
-        .lang>img:hover {
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            background-color: wheat;
-        }
-
-        #contactDiv {
-            /* border: 1px solid gray; */
-            /* display: flex; */
-            /* gap: 20px; */
-            /* width: 90%; */
-            margin: auto;
-            padding: 8px;
-            justify-content: space-evenly;
-            background-color: #92bcb5;
-            height: 440px;
-        }
-
-        #contactDiv>.sections {
-            /* border: 1px solid red; */
-            /* height: 300px; */
-            width: 50%;
-            margin: auto;
-
-        }
-
-        .contactDetails {
-            /* border: 1px solid gray; */
-            width: 90%;
-            height: 70px;
-            display: flex;
-            text-align: center;
-            align-items: center;
-
-        }
-
-        .contactDetails>i {
-            margin: 5px 50px 5px 30px;
-            font-size: 30px;
-        }
-
-        .contactDetails>a {
-            font-size: larger;
-            text-decoration: none;
-            color: black;
-        }
-        #gitStates{
-         
-            margin: 30px;
-            display: flex;
-            
-            
-            margin: auto;
-           justify-content: space-evenly;
-
-        }
-        #gitStates>img{
-            width: 40%;
-            margin: auto;
-        }
-            /*  large screen  */
-        @media all and (min-width: 1024px) and (max-width: 1350px) {
-           
-         #onDiv {
-            display: block;
-            /* border: 1px solid wheat; */
-            width: fit-content;
-            position: relative;
-            top: 200px;
-            left: 220px;
-            color: wheat;
-        }
-        #onDiv>span {
-            font-size: 40px;
-            font-weight: bold;
-        }
-        #onDiv2>img {
-            border-radius: 200px 0px 0px 200px;
-            width: 50%;
-            height: 400px;
-            margin-top: 50px;
-        }
-
-        #onDiv3>a {
-
-            display: block;
-            border: 1px solid wheat;
-            width: fit-content;
-            position: relative;
-            top: -250px;
-            left: 250px;
-            font-size: 40px;
-            color: wheat;
-            background-color: #111;
-            border-radius: 10px;
-        }
-
-        .navbar {
-            /* border: 1px solid teal; */
-            position: fixed;
-            top: 0px;
-            width: 100%;
-            z-index: 999;
-            padding: 30px 0;
-            font-family: "Ubuntu", sans-serif;
-            transition: all 0.3s ease;
-            /* background-color: gray; */
-        }
-
-        .navbar .max-width {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-right: 50px;
-        }
-        
-
-        }
-
-
-        	/* meidum screens */
-        @media all and (min-width: 768px) and (max-width: 1024px) {
-
-        #onDiv {
-            display: block;
-            /* border: 1px solid wheat; */
-            width: fit-content;
-            position: relative;
-            top: 200px;
-            left: 140px;
-            color: wheat;
-        }
-        #onDiv>span {
-            font-size: 30px;
-            font-weight: bold;
-        }
-        #onDiv2>img {
-            border-radius: 200px 0px 0px 200px;
-            width: 50%;
-            height: 350px;
-            margin-top: 50px;
-        }
-
-        #onDiv3>a {
-
-            display: block;
-            border: 1px solid wheat;
-            width: fit-content;
-            position: relative;
-            top: -250px;
-            left: 200px;
-            font-size: 30px;
-            color: wheat;
-            background-color: #111;
-            border-radius: 10px;
-        }
-
-        .navbar {
-            /* border: 1px solid teal; */
-            position: fixed;
-            top: 0px;
-            width: 100%;
-            z-index: 999;
-            padding: 30px 0;
-            font-family: "Ubuntu", sans-serif;
-            transition: all 0.3s ease;
-            
-            /* background-color: gray; */
-        }
-
-        .navbar .max-width {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-right: 50px;
-           
-        }
-        .navbar .max-width>.logo>a {
-           font-size:30px;
-           
-        }
-        .menu>a>li {
-            display: flex;
-            font-size:20px;
-        }
-        #profilePic {
-            /* border: 1px solid red; */
-            display: flex;
-            width: fit-content;
-            justify-content: center;
-            align-items: center;
-            margin-left: 20px;
-
-
-
-        }
-
-        #profilePic>img {
-            width: 250px;
-            height: 280px;
-            border-radius: 50%;
-            margin: 20px;
-        }
-
-        #skillSet {
-            /* border: 1px solid teal; */
-
-            width: 90%;
-            margin: auto;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: auto;
-        }
-
-        #skillSet>div {
-            /* border: 1px solid gray; */
-            margin-top: 20px;
-            height: 150px;
-
-        }
-
-        .lang>img {
-            width: 130px;
-            height: 130px;
-            border-radius: 20%;
-
-        }
-        #showProjects {
-            /* border: 1px solid teal; */
-            display: block;
-            width: 80%;
-            margin: auto;
-        }
-
-        #gitStates{
-            /* display: grid;
-            grid-template-columns: repeat(1,1fr);
-            grid-template-rows: auto; */
-            display: block;
-            width: 60%;
-            align-items: center;
-
-        }
-
-        #toolContainer{
-            border: 1px solid saddlebrown;
-          display: grid;
-          grid-template-columns: repeat(2,1fr);
-          grid-template-rows: auto;
-      }
-      #toolContainer>div>img{
-            width: 100px;
-            height: 100px;
-            border-radius: 20%;
-      }
-
-        }
-             	/* small screens */
-        @media all and (min-width: 320px) and (max-width: 767px) {
-
-   
-        .menu{
-            display: none;
-        }
-        #onDiv {
-            display: block;
-            /* border: 1px solid wheat; */
-            width: fit-content;
-            position: relative;
-            top: 200px;
-            left: 140px;
-            color: wheat;
-        }
-        #onDiv>span {
-            font-size: 30px;
-            font-weight: bold;
-        }
-        #onDiv2>img {
-            border-radius: 200px 0px 0px 200px;
-            width: 45%;
-            height: 250px;
-            margin-top: 50px;
-        }
-        #onDiv3>a {
-
-            display: block;
-            border: 1px solid wheat;
-            width: fit-content;
-            position: relative;
-            top: -250px;
-            left: 170px;
-            font-size: 30px;
-            color: wheat;
-            background-color: #111;
-            border-radius: 10px;
-        }
-        #imgAndOverview {
-            display: block;
-            margin-top: 20px;
-            justify-content: center;
-            align-items: center;
-        }
-        #profilePic {
-            /* border: 1px solid red; */
-            display: flex;
-            width: fit-content;
-            justify-content: center;
-            align-items: center;
-            margin-left: 20px;
-        }
-
-        #profilePic>img {
-            width: 250px;
-            height: 280px;
-            border-radius: 50%;
-          margin-left: 200px;
-        }
-
-
-        #description {
-            /* border: 2px solid skyblue; */
-            width: 80%;
-            margin: auto;
-        }
-
-        #description>span {
-            font-size: 30px;
-
-        }
-
-        #description>p {
-            margin-top: 10px;
-            line-height: 22px;
-            font-size: larger;
-        }
-
-        #skillSet {
-            /* border: 1px solid teal; */
-            width: 90%;
-            margin: auto;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: auto;
-        }
-
-        #skillSet>div {
-            /* border: 1px solid gray; */
-            margin-top: 20px;
-            height: 150px;
-
-        }
-        .lang>img {
-            width: 100px;
-            height: 100px;
-            border-radius: 20%;
-
-        }
-        #showProjects {
-            /* border: 1px solid teal; */
-            display: block;
-            width: 80%;
-            margin: auto;
-        }
-        #gitStates{
-          
-            display: block;
-
-        }
-        #gitStates>img{
-            width: 80%;
-            margin: auto;
-        }
-
-        #toolContainer{
-        display: block;
-      }
-      #toolContainer>div>img{
-            width: 100px;
-            height: 100px;
-            border-radius: 20%;
-      }
-     
-        /* .calendar>img{
-           
-            
-        } */
-
-
-      }
-      /* ///tools/// */
-      #toolContainer{
-          display: flex;
-          justify-content: space-evenly;
-      }
-      #toolContainer>div>img{
-            width: 150px;
-            height: 150px;
-            border-radius: 20%;
-      }
-     
-
-    </style>
-</head>
-
-<body>
-
-
-    <div id="container">
-
-        <nav class="navbar" id="changeColor">
-            <div class="max-width">
-                <div class="logo">
-                    <a href="#" id="colorChangeName">
-                        <span> Suraj Gundle</span>
-                    </a>
-                </div>
-                <ul class="menu">
-                    <a href="#">
-                        <li>Home</li>
-                    </a>
-                    <a href="#aboutME">
-                        <li>About</li>
-                    </a>
-                    <a href="#mySKILLS">
-                        <li>Skills</li>
-                    </a>
-                    <a href="#myPROJECTS">
-                        <li>Projects</li>
-                    </a>
-                    <a href="#myCONTACT">
-                        <li>Contact</li>
-                    </a>
-                </ul>
-            </div>
-        </nav>
-        <div id="bgImg">
-
-            <div id="onDiv">
-                <h1>Hello, I'm a</h1>
-                <br>
-                <span>Java Developer</span>
-            </div>
-
-            <div id="onDiv2">
-                <img src="./giphy.gif" alt="gif">
-            </div>
-            <!-- //////adjustment for about me/////// -->
-            <div id="aboutME"></div>
-            <div id="onDiv3">
-
-                <a href="./resume/Suraj Gundle Resume.pdf" download="Suraj Gundle Resume"><span>Resume</span></a>
-            </div>
-            
-        </div>
-        
-        <div class="menuDetails" >
-            
-            <div class="menuTitle" >
-                <h1> About me</h1>
-            </div>
-            <div id="imgAndOverview">
-
-                <div id="profilePic">
-                    <img src="./profPic.jpg" alt="profPic">
-
-
-                </div>
-                <div id="description">
-                    <span>I'm Suraj Madhav Gundle and I'm Java Developer</span>
-                    <p>A passionate JAVA Back-End Developer, Dedicated to developing robust applications that interact
-                        with the Backend part of web applications. Extensive expertise in website architecture, design,
-                        and web
-                        design, and web API designs. Problem-solving mindset with a goal to optimize my application for
-                        better
-                        stability and speed. Love to work in a team.</p>
-
-                </div>
-
-            </div>
-        </div>
-        <div class="menuDetails" id="mySKILLS">
-            <div class="menuTitle">
-                <h1>My Skills</h1>
-
-                <div id="skillSet">
-                    <div class="lang">
-                        <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" alt="">
-                    </div>
-                    <div class="lang">
-                        <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-ar21.svg" alt="">
-                    </div>
-                    <div class="lang">
-                        <img src="https://gauravportfolio0083.netlify.app/images/mysql.svg" alt="">
-                    </div>
-                    <div class="lang">
-                        <img src="https://i0.wp.com/theicom.org/wp-content/uploads/2016/03/js-logo.png?fit=500%2C500&ssl=1&w=640"
-                            alt="">
-                    </div>
-                    <div class="lang">
-                        <img src="https://gauravportfolio0083.netlify.app/images/java.svg" alt="">
-                    </div>
-                    <div class="lang">
-                        <img src="https://gauravportfolio0083.netlify.app/images/spring.svg" alt="">
-                    </div>
-                </div>
-
-
-
-            </div>
-
-
-        </div>
-
-        <div class="menuTitle" >
-            <h1> Tools Used</h1>
-        </div>
-        <div id="tools">
-
-            <div id="toolContainer">
-
-                <div><img src="data:image/png;base64,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" alt="vs">
-                </div>
-                <div> <img src="data:image/png;base64,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" alt="">
-               </div>
-                <div><img src="data:image/png;base64,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" alt="">
-               </div>
-                <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsM7yIxKkfqPILSmV6qiJpBN0gGZtN-VR9TA&usqp=CAU" alt="">
-                </div>
-            </div>
-
-        </div>
-
-        <div class="menuDetails" id="myPROJECTS">
-            <div class="menuTitle">
-                <h1>Projects</h1>
-            </div>
-
-            <div id="showProjects">
-
-                <div class="myProject">
-                    <div class="projectSnapShot">
-                        <img src="./licious.png" alt="licious">
-                    </div>
-                    <h3>Licious</h3>
-                    <p>Cloned
-                        Licious which is the first fresh meat brand
-                        in India. Specially for chicken food.User can order food online.
-                    </p>
-                    <br>
-                    <p>Tech Used : HTML, CSS, JavaScript</p>
-
-                    <div class="linkButtons">
-                        <a href="https://github.com/Ajay470/www.licious.com-clone" target="_blank">Git Repo</a>
-                        <a href="https://tranquil-melomakarona-9be279.netlify.app/" target="_blank">Live Site</a>
-                    </div>
-
-                </div>
-                <div class="myProject">
-                    <div class="projectSnapShot">
-                        <img src="./getHarvest.png" alt="getHarvest">
-                    </div>
-                    <h3>Get Harvest</h3>
-                    <p>Clone of Get Harvest helps you track your hours and projects, as well as
-                        invoice clients efficiently with time tracking.
-                    </p>
-                    <br>
-                    <p>Tech Used : HTML, CSS,API,JavaScript</p>
-
-                    <div class="linkButtons">
-                        <a href="https://github.com/Shivam-Moudgil/get-harvest-clone" target="_blank">Git Repo</a>
-                        <a href=" https://get-harvest.netlify.app/" target="_blank">Live Site</a>
-                    </div>
-
-                </div>
-                <div class="myProject">
-                    <div class="projectSnapShot">
-                        <img src="./cricInfo.png" alt="licious">
-                    </div>
-                    <h3>CricInfo</h3>
-                    <p>Clone of CricInfo that helps you to
-                        find Live Cricket Scores, Match updates, Results,
-                        News, Articles at ESPNcricinfo
-                    </p>
-                    <br>
-                    <p>Tech Used : HTML, CSS, JavaScript</p>
-
-                    <div class="linkButtons">
-                        <a href="https://github.com/sukhendu32/ragged-stranger-4285" target="_blank">Git Repo</a>
-                        <a href="https://curious-wisp-5abbfd.netlify.app/" target="_blank">Live Site</a>
-                    </div>
-
-                </div>
-
-
-            </div>
-
-
-        </div>
-        <!-- ///////////STATICS///////////// -->
-        <div class="menuTitle">
-            <h1>My Statistics</h1>
-        </div>
-        <div id="gitStates">
-            <img src="./githubStates.png" alt="">
-            <img src="./githubStreak.png" alt="">
-        </div>
-
-
-
-        <!-- ////////////////////////////////// -->
-
-        <!-- ////////////CALENDER//////////// -->
-
-        <div class="menuTitle">
-            <h1>My Github Calender</h1>
-        </div>
-        <div class="calendar">
-
-            <!-- Loading stuff -->
-
-        </div>
-
-        <!-- ////////////////////////////////// -->
-
-
-
-        <div class="menuDetails" id="myCONTACT">
-            
-
-            <div id="contactDiv">
-                <div class="menuTitle">
-                    <h1>Contact me</h1>
-                </div>
-
-                <div class="sections">
-                    <!-- <div>
-                        <h2>Get in Touch with</h2>
-                    </div> -->
-
-                    <div class="contactDetails">
-                        <i class="fa-solid fa-envelope"></i>
-                        <a href="mailto:shubhamgundle35@gmail.com">shubhamgundle35@gmail.com</a>
-                    </div>
-                    <div class="contactDetails">
-                        <i class="fa-brands fa-linkedin"></i>
-                        <a href="https://www.linkedin.com/in/surajgundle/" target="_blank">Linkedin</a>
-                    </div>
-                    <div class="contactDetails">
-                        <i class="fa-brands fa-github"></i>
-                        <a href="https://github.com/SurajGundle" target="_blank">GitHub</a>
-                    </div>
-                    <div class="contactDetails">
-                        <i class="fa-solid fa-phone"></i>
-                        <a href="">+91 9552982183</a>
-                    </div>
-
-                </div>
-                <!-- <div class="sections"></div> -->
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-
-</body>
-
-</html>
-<script>
-    window.onscroll = () => {
-        if (this.scrollY > 50) {
-            document.getElementById("changeColor").style.backgroundColor = "#92bcb5 ";
-            document.getElementById("colorChangeName").style.backgroundColor = "#92bcb5";
-        } else {
-            document.getElementById("changeColor").style.backgroundColor = "";
-            document.getElementById("colorChangeName").style.backgroundColor = "";
-        }
-    }
-
-</script>
-
-<script>
-    GitHubCalendar(".calendar", "SurajGundle");
-
-    // or enable responsive functionality:
-    GitHubCalendar(".calendar", "SurajGundle", { responsive: true });
-
-    // Use a proxy
-    GitHubCalendar(".calendar", "SurajGundle", {
-        proxy(SurajGundle) {
-            return fetch(`https://your-proxy.com/github?user=${SurajGundle}`)
-        }
-    }).then(r => r.text())
+    <title>Suraj Gundle Portfolio </title>
+    <!-- <link rel="stylesheet" href="css/swiper-bundle.min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+ 
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+ />
+ 
+  </head>
+  <body>
 
   
+
+    <!--=======Header=======-->
+<header>
+  <div class="nav-bar">
+<a href="#" class="logo">Suraj Gundle</a>
+<div class="navigation">
+  <div class="nav-items">
+    <div class="nav-close-btn"></div>
+    <a class="active" href="#home"  >Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#portfolio">My Project</a>
+    <a href="#contact">Contact</a>
+    <a href="./images/fw19_0659_Suraj Gundle Resume.pdf" download="fw19_00659_Suraj_Gundle_Resume" onclick="window.open( `https://drive.google.com/file/d/1wvH1vvipvvHSSGZpuBPdB07MaabjXSIk/view?usp=sharing`)">Resume <i class="fas fa-download"></i></a>
+
+  </div>
+</div>
+<div class="nav-menu-btn"></div>
+  </div>
+</header>
+    <!--=======Home section=======-->
+
+
+
+    
+
+    <section class="home flex-center blr" id="home"  style="  margin: auto;">
+      <div class="blr1" >
+
+      
+      <div class="home-container1"  style=" margin: auto; margin-top: 120px;">
+
+        <div class="profile-thumb" style="background: url(./images/surajGundleProfilePic.jpg);"></div>
+
+        <div class="info" style="margin: auto; display: flex; flex-direction: column; text-align: center;">
+              <h1 id="Mfont"><span>Hi, I am Suraj </span></h1>
+              <h2 >Java Back-End Developer</h2>
+							<h3 class="Mfont1" style="font-weight: lighter; font-weight: 300;"><span>I am an ambitious and hard-working back-end developer.</span></h3>
+              <h3 class="Mfont1" style="font-weight: lighter; font-weight: 300;"><span>My area of expertise includes problem-solving, analyzing skills, and designing software.</span></h3>
+          
+        </div>
+
+        <div class="media-icons" >
+
+         
+          <a href="https://github.com/SurajGundle" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/surajgundle/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:shubhamgundle35@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            
+       
+
+
+          
+        </div>
+       
+        <div class="home-img">
+          
+    
+        </div>
+      </div>
+  
+    </div>
+    </section>
+
+    
+
+    <!--=======About section=======-->
+<section class="about section" id="about">
+
+  <div class="container flex-center">
+    <h1 class="section-title-01">About Me</h1>
+    <h2 class="section-title-02">About Me</h2>
+    <div class="content flex-center">
+      <div class="about-img">
+        <img src="images/pexels-christina-morillo-1181298.jpg" alt="" >
+      </div>
+      <div class="about-info">
+        <div class="description">
+          <h3>I'm Suraj</h3>
+          <h4>A <span> Backend Developer</span> based in <span>India</span> </h4>
+          <p>A passionate JAVA Back-End Developer, Dedicated to developing robust applications that interact
+            with the Backend part of web applications. Extensive expertise in website architecture, design,
+            and web
+            design, and web API designs. Problem-solving mindset with a goal to optimize my application for
+            better
+            stability and speed. Love to work in a team. </p>
+        </div>
+  
+       
+      <a href="./images/fw19_0659_Suraj Gundle Resume.pdf" download="fw19_00659_Suraj_Gundle_Resume" onclick="window.open( `https://drive.google.com/file/d/1wvH1vvipvvHSSGZpuBPdB07MaabjXSIk/view?usp=sharing`, `_blank`)" class="btn"> Download CV <i class="fas fa-download"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!--=======Skills section=======-->
+
+
+
+
+     <section class="skills section" id="skills">
+      <div class="container flex-center">
+        <h1 class="section-title-01">Skills</h1>
+        <h2 class="section-title-02">Skills</h2>
+
+          <div class="content1">
+            <div class="services-description1">
+             
+              <h3>Teck Stack</h3>
+            </div>
+
+            <ul class="service-list1">
+
+               <li class="service-container1">
+                <div class="service-card1">
+                <img src="/images/New folder/html1.png" alt="">
+                <h3>HTML</h3>
+             
+                </div>
+              </li>
+              <li class="service-container1">
+                <div class="service-card1">
+                <img src="/images/New folder/html.png" alt="">
+                <h3>CSS</h3>
+             
+                </div>
+              </li>
+              <li class="service-container1">
+                <div class="service-card1">
+                <img src="/images/New folder/js.png" alt="">
+                <h3>JS</h3>
+             
+                </div>
+              </li>
+              <li class="service-container1">
+                <div class="service-card1">
+                <img src="/images/New folder/java.png" alt="">
+                <h3>JAVA</h3>
+             
+                </div>
+              </li>
+              <li class="service-container1">
+                <div class="service-card1">
+                <img src="/images/springBootLogo2.png" alt="">
+                <h3>SpringBoot</h3>
+             
+                </div>
+              </li>
+              <li class="service-container1">
+                <div class="service-card1">
+                <img src="/images/New folder/hibernate.png" alt="">
+                <h3>HIBERNATE</h3>
+             
+                </div>
+              </li>
+
+             
+
+               
+            </ul>
+          </div>
+
+          <div class="content1">
+            <div class="services-description1">
+             
+              <h3>Tools</h3>
+            </div>
+
+            <ul class="service-list1">
+
+               <li class="service-container1">
+                <div class="service-card1">
+                <img src="/images/vsCodeLogo.jpeg" alt="">
+                <h3>VS Code</h3>
+             
+                </div>
+              </li>
+              <li class="service-container1">
+                <div class="service-card1">
+                <img src="/images/New folder/github.png" alt="">
+                <h3>GitHub</h3>
+             
+                </div>
+              </li>
+              <li class="service-container1">
+                <div class="service-card1">
+                <img src="/images/springToolSuit.jpeg" alt="">
+                <h3>SpringTool</h3>
+             
+                </div>
+              </li>
+              <li class="service-container1">
+                <div class="service-card1">
+                <img src="/images/New folder/sql.png" alt="">
+                <h3>MySql</h3>
+             
+                </div>
+              </li>
+              <li class="service-container1">
+                <div class="service-card1">
+                <img src="/images/New folder/git.png" alt="">
+                <h3> Git </h3>
+             
+                </div>
+              </li>
+              <li class="service-container1">
+                <div class="service-card1">
+                <img src="/images/New folder/int.jfif" alt="">
+                <h3>IntelliJ</h3>
+             
+                </div>
+              </li>
+
+             
+
+               
+            </ul>
+          </div>
+      </div>
+    </div>
+
+     </section>
+    <!--=======Services section=======-->
+
+
+
+    <!--=======Portfolio section=======-->
+    <section class="portfolio section" id="portfolio">
+      <div class="our-client sub-section"> 
+        <div class="container flex-center">
+          <h1 class="section-title-01">My Projects</h1>
+          <h2 class="section-title-02">My Projects</h2>
+
+
+          <div class="project-container12">
+            
+            <!-- first project -->
+                <div class="pcard" >
+
+
+                  <div class="client-img">
+                    <img src="./images/cricInfo.png" id="pimg" alt="">
+                  </div>
+                  <div style="display: grid;" class="client-details">
+                    <p>CricInfo is online website that helps you to
+                      find Live Cricket Scores, Match updates, Results,
+                      News, Articles at ESPNcricinfo. My team and I made a perfect replica of their website.  </p>
+                    <h3>CricInfo_Clone</h3> 
+                    <span>Tech Stack -  CSS | HTML | JAVASCRIPT</span>
+                   
+                    <p></p>
+                    
+                    <h5><span class="hei">Features</span></h5>
+                    <span>- End to end user view flow.</span>
+                    <span>- User can view past matches scores.</span>
+                    <p></p>
+                    <h5 ><span class="hei">Area of Responsibility</span></h5>
+                    <span>- Responsible for making navbar.</span>
+                    <span>- Live Score section.</span>
+                    <p></p>
+
+                    <div class="pro-icon">
+                      <a href="https://github.com/sukhendu32/ragged-stranger-4285" target="_blank" ><img src="images/git-github-hub-icon.png" style="width: 50px;" alt=""></a>
+                    <a href="https://curious-wisp-5abbfd.netlify.app/index.html" target="_blank"><img src="./images/cricinfoLogo.png" style="width: 98px; border-radius: 10px;" alt=""></a>
+
+                    </div>
+                    
+                    
+                  </div>
+                </div>
+            <!-- second project -->
+                <div class="pcard">
+
+                  <div class="client-img">
+                    <img src="./images/liciousWeb.png" id="pimg" alt="">
+                  </div>
+                  <div style="display: grid;" class="client-details">
+                    <p>Licious is the first fresh meat brand in India. My team and I made a perfect replica of their website.</p>
+                    <h3>Licious _clone</h3> 
+                    <span>Tech Stack -  CSS | HTML | JAVASCRIPT</span>
+               
+                    <p></p>
+                    
+                    <h5><span class="hei">Features</span></h5>
+                    <span>- Complete commerce store.</span>
+                    <span>- Different sorting and filtering algorithm.</span>
+                    <p></p>
+                    <h5 ><span class="hei">Area of Responsibility</span></h5>
+                    <span>- Getting products form website.</span>
+                    <span>- Making of cart session.</span>
+                    <p></p>
+
+                    <div class="pro-icon">
+                      <a href="https://github.com/Ajay470/www.licious.com-clone" target="_blank" ><img src="images/git-github-hub-icon.png" style="width: 50px;" alt=""></a>
+                    <a href="https://tranquil-melomakarona-9be279.netlify.app/" target="_blank"><img src="./images/liciousLogo.jpeg" style="width: 98px;  border-radius: 3px;" alt=""></a>
+
+                    </div>
+                    
+                    
+                  </div>
+                </div>
+
+             <!-- third project -->
+
+             <div class="pcard">
+
+              <div class="client-img">
+                <img src="./images/getHarvest.png" id="pimg" alt="">
+              </div>
+              <div style="display: grid;" class="client-details">
+                <p>Clone of Get Harvest helps you track your hours and projects, as well as
+                  invoice clients efficiently with time tracking.</p>
+                <h3>Get Harvest</h3> 
+                <span>Tech Stack -  HTML | CSS | JAVASCRIPT</span>
+           
+                <p></p>
+                
+                <h5><span class="hei">Features</span></h5>
+                <span>- Complete time tracking application.</span>
+                <span>- Login-Logout functionality.</span>
+                <p></p>
+                <h5 ><span class="hei">Area of Responsibility</span></h5>
+                <span>- Responsible for Features page and Integrations pages .</span>
+                <span>- Made small API for showing Integrated apps.</span>
+                <p></p>
+
+                <div class="pro-icon">
+                  <a href="https://github.com/Shivam-Moudgil/get-harvest-clone" target="_blank" ><img src="images/git-github-hub-icon.png" style="width: 50px;" alt=""></a>
+                <a href=" https://get-harvest.netlify.app/" target="_blank" ><img src="./images/getHarvestLogo.png" style="width: 98px;  border-radius: 3px;" alt=""></a>
+
+                </div>
+                
+                
+              </div>
+            </div>
+
+
+              </div>
+             
+          
+
+
+        </div>
+      </div>
+
+    </section>
+    
+      <!--=======Statistics=======-->
+
+      <section class="services section" id="services">
+        <div class="container flex-center">
+          <h1 class="section-title-01">My Statistics</h1>
+          <h2 class="section-title-02">My Statistics</h2>
+          <div class="content">
+            <div class="services-description">
+             
+              <h3>What I Achieve</h3>
+            </div>
+            <ul class="service-list">
+              <li class="service-container">
+                <div class="service-card">
+                  <!-- <i class="fas fa-pencil-ruler"></i> -->
+                  <img src="/images/New folder/code.png" alt="">
+                  <h3>1200+</h3>
+                  <h3>Hours Of Coding</h3>
+                  <h3> -</h3>
+                </div>
+              </li>
+               <li class="service-container">
+                <div class="service-card">
+                  <img src="/images/New folder/dsa.png" alt="">
+                  <h3>600+</h3>
+                  <h3>Hours Of DSA</h3>
+                  <h3> -</h3>
+                </div>
+              </li>
+    
+              <li class="service-container">
+                <div class="service-card">
+                  <img src="/images/New folder/project.png" alt="">
+                  <h3>2+</h3>
+                  <h3>Mini Projects</h3>
+                  <h3> -</h3>
+                </div>
+              </li>
+              <li class="service-container">
+                <div class="service-card">
+                  <img src="/images/New folder/powers.png" alt="">
+                  <h3>6+</h3>
+                  <h3>Months Of Power Skills</h3>
+                </div>
+              </li>
+           
+                <!--=======Our Clients=======-->
+      
+
+            </ul>
+          </div>
+        </div>
+      </section> 
+
+      <section class="skills section " id="skills1">
+        <div class="calendar" >
+          <!-- Loading stuff -->
+          Loading the data just for you.
+      </div>
+      
+        </section>
+
+        
+      
+   
+     <!--=======Contact section=======-->
+     <section class="contact section" id="contact">
+      <div class="container flex-center">
+        <h1 class="section-title-01">Contact Me</h1>
+        <h2 class="section-title-02">Contact Me</h2>
+        <div class="content">
+          <div class="contact-left">
+            <!-- <h2>Let's discuss your project</h2> -->
+            <ul class="contact-list"> 
+              <li>
+                <h3 class="item-title"><i class="fas fa-phone"></i>Phone</h3>
+                <span>+91 9552982183</span>
+              </li>
+              <li>
+                <h3 class="item-title"><i class="fas fa-envelope"></i>Email Address</h3>
+                <span><a href="mailto:shubhamgundle35@gmail.com">shubhamgundle35@gmail.com</a></span>
+              </li>
+              <li>
+                <h3 class="item-title"><i class="fas fa-map-marker-alt"></i>Address</h3>
+                <span>Akurdi, Pune.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="contact-right">
+            <p>I'm always open to discussing product <br><span>design-related work.
+           </span> </p>
+           <form action="" class="contact-form">
+            <div class="first-row">
+              <input type="text" placeholder="Name">
+            </div>
+            <div class="second-row">
+              <input type="text" placeholder="Email">
+              <input type="text" placeholder="Subject">
+            </div>
+            <div class="third-row">
+              <textarea name="message" id=""  rows="7" placeholder="Message"></textarea>
+            </div>
+            <button class="btn" type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+           </form>
+          </div>
+        </div>
+      </div>
+     </section>
+    <!--=======Footer=======-->
+        <footer>
+          <div class="footer-container">
+            <div class="about group">
+              <h2>Suraj</h2> 
+              <p>Back-end Developer</p>
+              <a href="#about">About Me</a>
+          </div>
+          <div class="hr"></div>
+          <div class="info group">
+            <h3>More</h3>
+            <ul>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#work">Experience</a></li>
+              <li><a href="#portfolio">My Project</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="hr"></div>
+          <div class="follow group">
+            <h3>Follow</h3>
+
+            <!-- <a href="https://github.com/SurajGundle" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/surajgundle/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:shubhamgundle35@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+             -->
+            <ul>
+              <li><a href="https://github.com/SurajGundle" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/surajgundle/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+           
+            </ul>
+          </div>
+        </div>
+        <!-- <div class="footer-copyright group">
+          <p>© 2021 by Suraj Gundle. All rights reserved.</p>
+        </div> -->
+        </footer>
+
+
+    <!--=======External scripts=======-->
+  
+    <script src="js/main.js"></script>
+  </body>
+</html>
+
+<script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
+></script>
+<!-- <script>
+  GitHubCalendar(".calendar", "Ajay470");
+  // or enable responsive functionality
+  GitHubCalendar(".calendar", "Ajay470", { responsive: true });
+</script> -->
+
+<script>
+  GitHubCalendar(".calendar", "SurajGundle");
+
+  // or enable responsive functionality:
+  GitHubCalendar(".calendar", "SurajGundle", { responsive: true });
+
+
+  
+    // GitHubCalendar(".calendar", "SurajGundle");
+
+    // // or enable responsive functionality:
+    // GitHubCalendar(".calendar", "SurajGundle", { responsive: true });
+
+    // // Use a proxy
+    // GitHubCalendar(".calendar", "SurajGundle", {
+    //     proxy(SurajGundle) {
+    //         return fetch(`https://your-proxy.com/github?user=${SurajGundle}`)
+    //     }
+    // }).then(r => r.text())
+
+  
+</script>
+
+ 
+
+
 </script>
