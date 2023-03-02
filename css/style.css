@@ -414,14 +414,6 @@ color: var(--second-color);
 /*=======Skills section=======*/
 
 
-
-
-
-
-
-
-
-        
 .experience-card{
   background: var(--card-bd-color);
   border-bottom: 3px solid var(--second-color);
@@ -625,8 +617,6 @@ height: 150px;
  
 }
 
-
-
 .pcard{
 
   /* padding: 30px; */
@@ -798,6 +788,7 @@ margin-top: 50px;
   border-radius: 6px;
   box-shadow: var(--box-shadow);
 }
+
 
 /*=======Footer=======*/
 
@@ -1089,12 +1080,5 @@ footer a{
 
 
 
-
-
-
-/* //////////////////////////////////////////////////////// */
-
-
-
-  /*=======Get-in-touch section=======*/
 }
+
