@@ -184,6 +184,7 @@ header.sticky .nav-bar {
 }
 
 .blr1 {
+  /* border: 1px solid gray; */
   width: 100%;
   height: 100vh;
   background: rgba(255, 144, 0, 0.9);
@@ -252,6 +253,7 @@ header.sticky .nav-bar {
   align-items: center;
   width: 70%;
 }
+
 
 
 
@@ -464,7 +466,6 @@ header.sticky .nav-bar {
 
 .skills1 .container .content {
   width: 100%;
-
 }
 
 .services-description1 h3 {
@@ -557,6 +558,7 @@ header.sticky .nav-bar {
     grid-template-columns: repeat(1,1fr);
     grid-template-rows: auto; */
   }
+  
 }
 
 @media (min-width: 600px) {
@@ -889,7 +891,7 @@ footer {
   align-items: center;
   flex-direction: column;
   background: var(--second-color);
-  width: 100%;
+  width: 200%;
   margin-top: 50px;
   padding: 3rem 2rem;
   color: #fff;
@@ -1174,6 +1176,84 @@ footer a {
     margin-bottom: 80px;
   }
 }
+
+@media (min-width: 350px) and (max-width: 550px) {
+
+ .content1{
+ 
+  margin-left: 100px;
+  
+ }
+ .pcard{
+  margin-left: 100px;
+  
+ }
+ 
+}
+@media (max-width: 350px) {
+
+  .content1{
+  
+   /* margin-left: 100px; */
+   
+  }
+  .pcard{
+   /* margin-left: 160px; */
+   
+  }
+  .blr1{
+    height: 100%;
+  }
+  .container{
+    /* border: 1px solid teal; */
+    width: 300%;
+    margin: auto;
+  }
+
+  .service-list1 {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(155px,1fr)); */
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100px auto;
+    gap: 50px;
+  
+  }
+ 
+  #skills1 {
+/* border: 1px solid teal; */
+    margin-top: 50px;
+    background: var(--card-bg-color);
+    border-bottom: 3px solid var(--second-color);
+    padding: 30px;
+    border-radius: 6px;
+    /* box-shadow: var(--box-shadow); */
+    display: block;
+  width: 180%;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  #skills1>#steckImg {
+    /* border: 1px solid gold; */
+    display: flex;
+    flex-direction: column;
+    /* margin: auto; */
+  
+  }
+  
+  #skills1>img {
+    width: 90%;
+  }
+  .calendar{
+
+  width: 180%;
+    
+  }
+  
+ }
+
+
 
 /*/////////////// normal style section /////////////*/
 
